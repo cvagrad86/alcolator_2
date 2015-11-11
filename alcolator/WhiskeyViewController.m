@@ -54,7 +54,7 @@
     NSString *resultText = [NSString stringWithFormat:NSLocalizedString(@"%d %@ (with %.2f%% alcohol) contains as much alcohol as %.1f %@ of whiskey.", nil), numberOfBeers, beerText, [self.beerPercentTextField.text floatValue], numberOfWhiskeyGlassesForEquivalentAlcoholAmount, whiskeyText];
     self.resultLabel.text = resultText;
     //this is my attempt at the challenge, end of cp21
-    (self.navigationItem.title = @"Whiskey %f", whiskeyText);
+    //(self.navigationItem.title = @"Whiskey %f", whiskeyText);
     
     
 }

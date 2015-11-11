@@ -37,6 +37,13 @@
     
     NSLog(@"Slider value changed to %f", sender.value);
     [self.beerPercentTextField resignFirstResponder];
+    
+    //the challenge asks to update this to the calculation instead of sliders value. The calculation is represented by
+    //NSString *resultText. What I am not clear on is how to call that when it is calculated and respresented in another method
+    //call
+    // self.tabBarItem setBadgeValue:[NSString stringWithFormat:@"%d", (int) resultText]]; this creates an error
+    
+    [self.tabBarItem setBadgeValue:[NSString stringWithFormat:@"%d", (int) sender.value]];
 }
 - (IBAction)buttonPressed:(id)sender {
     [self.beerPercentTextField resignFirstResponder];
